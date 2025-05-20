@@ -6,10 +6,12 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  background-color: #fdf6ec;
+
 }
 
 nav {
-  background-color: #f8f8f8;
+  background-color: #b22222;
   padding: 12px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -300,11 +302,12 @@ p {
 /* comment */
 
 .comment-box {
-  max-width: 600px;
+  max-width: 1000px;
   margin: auto;
   background: white;
   padding: 30px;
   border-radius: 8px;
+  margin-top: 20px;
 }
 
 textarea {
@@ -345,4 +348,117 @@ button:hover {
   font-size: 0.8em;
   color: #666;
   margin-top: 5px;
+}
+
+
+/* footer */
+
+.footer-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  background-color: #3e2723;
+margin-top: 30px;
+}
+
+.footer-left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 200px;
+}
+
+.footer-explore {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+}
+
+.footer-links {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.footer-links a:hover {
+  color: #f8b400;
+}
+
+/* Social media */
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-social a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-social a:hover {
+  color: #f8b400;
+}
+
+.footer-social span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* QR code */
+.footer-qr img {
+  width: 130px;
+  height: 130px;
+  border-radius: 10px;
+}
+
+.footer-qr p {
+  margin-top: 6px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .footer-row {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left-column {
+    min-width: auto;
+  }
+
+  .footer-explore {
+    font-size: 24px;
+  }
+
+  .footer-social a {
+    font-size: 28px;
+  }
+
+  .footer-qr img {
+    width: 110px;
+    height: 110px;
+  }
 }

@@ -3,6 +3,26 @@ function toggleMenu() {
     nav.classList.toggle("active");
   }
   
+  const images = [
+    "images/Chhath_puja_photo.jpg",
+    "images/gol-ghar-patna-bihar-1-attr-hero.jpeg",
+    "images/images (1).png"
+  ];
+
+  let index = 0;
+
+  function showImage() {
+    document.getElementById("carouselImage").src = images[index];
+  }
+
+  function showNext() {
+    index = (index + 1) % images.length;
+    showImage();
+  }
+
+  setInterval(showNext, 2000);
+
+  
   function addComment() {
     const commentInput = document.getElementById("commentInput");
     const commentText = commentInput.value.trim();

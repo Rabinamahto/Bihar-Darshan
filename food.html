@@ -1,103 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bihar food</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-      <h1>Bihar Darshan</h1>
-  <h2>Famous Foods of Bihar</h2>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <div class="food-container">
+  </head>
+  <body>
+    <nav>
+      <div class="menu-header">
+        <div class="menu-icon" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="menu-logo">
+          <div class="menu-logo">
+            <a href="index.html">
+              <img src="images/images.png" alt="logo" />
+            </a>
+          </div>        </div>
+      </div>
 
-    <div class="food-card">
-      <img src="images/1_c484de06-a195-4424-b1df-f9765b395329_480x480.webp" alt="Litti Chokha" />
-      <div class="food-card-content">
-        <h3>Litti Chokha</h3>
-        <p>Roasted wheat balls filled with spiced gram flour, served with mashed vegetables like potato, tomato, and
-          brinjal.</p>
-      </div>
-    </div>
+      <div class="nav-container" id="navContainer">
+        <div class="navbar-left">
+          <div class="menu-logo">
+            <div class="menu-logo">
+              <a href="index.html">
+                <img src="images/images.png" alt="logo" />
+              </a>
+            </div>          </div>
+          <ul class="navbar-links">
+            <li class="nav-item">
+              <a href="#">Explore Bihar</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Destination</a></li>
+                <li><a href="#">Districts</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#">Art & Culture</a>
+              <ul class="dropdown-menu">
+                <li><a href="art.html">Art & Craft</a></li>
+                <li><a href="festival.html">Festival & Fairs</a></li>
+                <li><a href="food.html">Food & Cuisine</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
 
-    <div class="food-card">
-      <img src="images/PROD_Thekua_1651063504889_thumb_500.jpeg" alt="Thekua" />
-      <div class="food-card-content">
-        <h3>Thekua</h3>
-        <p>A crispy, sweet snack made with wheat flour, jaggery, and coconut. Mostly enjoyed during Chhath Puja.</p>
+        <div class="search-container">
+          <input type="text" placeholder="Search..." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
       </div>
-    </div>
-
-    <div class="food-card">
-      <img src="images/mawa-malpua-is-best-holi-food-items-e1711173186759.jpg" alt="Malpua" />
-      <div class="food-card-content">
-        <h3>Malpua</h3>
-        <p>Sweet fried pancakes made of flour, banana, and milk, soaked in sugar syrup. A Holi special dessert.</p>
-      </div>
-    </div>
-
-    <div class="food-card">
-      <img src="images/maxresdefault.jpg" alt="Sattu Paratha" />
-      <div class="food-card-content">
-        <h3>Sattu Paratha</h3>
-        <p>Stuffed flatbread filled with roasted gram flour mixed with herbs and spices, served with curd or chutney.
-        </p>
-      </div>
-    </div>
-
-    <div class="food-card">
-      <img src="images/poonam-singh820180228170245695.jpeg" alt="Dal Pitha" />
-      <div class="food-card-content">
-        <h3>Dal Pitha</h3>
-        <p>Steamed rice flour dumplings stuffed with spicy lentil filling. A traditional Bihari healthy snack.</p>
-      </div>
-    </div>
-
-    <div class="food-card">
-      <img src="images/images (4).jpeg" alt="Malai Kheer" />
-      <div class="food-card-content">
-        <h3>Malai Kheer</h3>
-        <p>A creamy dessert made with rice, milk, cardamom, and garnished with dry fruits. Popular in Bihari households.
-        </p>
-      </div>
-    </div>
-    <div class="food-card">
-      <img src="images/download.jpeg" alt="Khc:\Users\sakshi\Documents\New folder\image\download.jpegaja" />
-      <div class="food-card-content">
-        <h3>Khaja</h3>
-        <p>A crispy, flaky dessert similar to baklava, made with layered dough soaked in sugar syrup.</p>
-      </div>
-    </div>
-    <div class="food-card">
-      <img src="images/Chandrakala_sweet.webp" alt="Ghugni" />
-      <div class="food-card-content">
-        <h3>Ghujiya</h3>
-        <p>A spicy curry made from black gram or peas, enjoyed with roti or puffed rice.</p>
-      </div>
-    </div>
-    <div class="food-card">
-      <img src="images/kadi-badi-recipe-main-photo.jpg" alt="Kadhi Bari" />
-      <div class="food-card-content">
-        <h3>Kadhi Bari</h3>
-        <p>Soft gram flour dumplings cooked in tangy yogurt-based gravy, served with rice.</p>
-      </div>
-    </div>
-    <div class="food-card">
-      <img src="images/images (3).jpeg" alt="Boondi Ladoo" />
-      <div class="food-card-content">
-        <h3>Boondi Ladoo</h3>
-        <p>Sweet balls made of small fried gram flour droplets soaked in syrup and bound together.</p>
-      </div>
-    </div>
-    <div class="food-card">
-      <img src="images/images (4).jpeg" alt="Parwal Mithai" />
-      <div class="food-card-content">
-        <h3>Parwal Ki Mithai</h3>
-        <p>A unique sweet where pointed gourd is stuffed with khoya and nuts, especially loved in Bihar.</p>
-      </div>
-    </div>
-
+    </nav>
+    <div class="heading-food">
+    <h2>Famous Foods of Bihar</h2>
   </div>
-</body>
+
+    <div class="food-container">
+      <div class="food-card">
+        <img
+          src="images/1_c484de06-a195-4424-b1df-f9765b395329_480x480.webp"
+          alt="Litti Chokha"
+        />
+        <div class="food-card-content">
+          <h3>Litti Chokha</h3>
+          <p>
+            Roasted wheat balls filled with spiced gram flour, served with
+            mashed vegetables like potato, tomato, and brinjal.
+          </p>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img
+          src="images/PROD_Thekua_1651063504889_thumb_500.jpeg"
+          alt="Thekua"
+        />
+        <div class="food-card-content">
+          <h3>Thekua</h3>
+          <p>
+            A crispy, sweet snack made with wheat flour, jaggery, and coconut.
+            Mostly enjoyed during Chhath Puja.
+          </p>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img
+          src="images/mawa-malpua-is-best-holi-food-items-e1711173186759.jpg"
+          alt="Malpua"
+        />
+        <div class="food-card-content">
+          <h3>Malpua</h3>
+          <p>
+            Sweet fried pancakes made of flour, banana, and milk, soaked in
+            sugar syrup. A Holi special dessert.
+          </p>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="images/maxresdefault.jpg" alt="Sattu Paratha" />
+        <div class="food-card-content">
+          <h3>Sattu Paratha</h3>
+          <p>
+            Stuffed flatbread filled with roasted gram flour mixed with herbs
+            and spices, served with curd or chutney.
+          </p>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="images/poonam-singh820180228170245695.jpeg" alt="Dal Pitha" />
+        <div class="food-card-content">
+          <h3>Dal Pitha</h3>
+          <p>
+            Steamed rice flour dumplings stuffed with spicy lentil filling. A
+            traditional Bihari healthy snack.
+          </p>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="images/images (4).jpeg" alt="Malai Kheer" />
+        <div class="food-card-content">
+          <h3>Malai Kheer</h3>
+          <p>
+            A creamy dessert made with rice, milk, cardamom, and garnished with
+            dry fruits. Popular in Bihari households.
+          </p>
+        </div>
+      </div>
+      <div class="food-card">
+        <img
+          src="images/download.jpeg"
+          alt="Khc:\Users\sakshi\Documents\New folder\image\download.jpegaja"
+        />
+        <div class="food-card-content">
+          <h3>Khaja</h3>
+          <p>
+            A crispy, flaky dessert similar to baklava, made with layered dough
+            soaked in sugar syrup.
+          </p>
+        </div>
+      </div>
+      <div class="food-card">
+        <img src="images/Chandrakala_sweet.webp" alt="Ghugni" />
+        <div class="food-card-content">
+          <h3>Ghujiya</h3>
+          <p>
+            A spicy curry made from black gram or peas, enjoyed with roti or
+            puffed rice.
+          </p>
+        </div>
+      </div>
+      <div class="food-card">
+        <img src="images/kadi-badi-recipe-main-photo.jpg" alt="Kadhi Bari" />
+        <div class="food-card-content">
+          <h3>Kadhi Bari</h3>
+          <p>
+            Soft gram flour dumplings cooked in tangy yogurt-based gravy, served
+            with rice.
+          </p>
+        </div>
+      </div>
+      <div class="food-card">
+        <img src="images/images (3).jpeg" alt="Boondi Ladoo" />
+        <div class="food-card-content">
+          <h3>Boondi Ladoo</h3>
+          <p>
+            Sweet balls made of small fried gram flour droplets soaked in syrup
+            and bound together.
+          </p>
+        </div>
+      </div>
+      <div class="food-card">
+        <img src="images/images (4).jpeg" alt="Parwal Mithai" />
+        <div class="food-card-content">
+          <h3>Parwal Ki Mithai</h3>
+          <p>
+            A unique sweet where pointed gourd is stuffed with khoya and nuts,
+            especially loved in Bihar.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-left">
+      <div class="footer-row">
+        <div class="footer-left-column">
+          <div class="footer-explore">Explore Bihar</div>
+          <ul class="footer-links">
+            <li><a href="#">Art & Culture</a></li>
+            <li><a href="#">Food</a></li>
+            <li><a href="#">Festival</a></li>
+            <li><a href="#">Map</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://facebook.com">
+            <i class="fab fa-facebook-f"></i> <span>Facebook</span>
+          </a>
+          <a href="https://instagram.com">
+            <i class="fab fa-instagram"></i> <span>Instagram</span>
+          </a>
+          <a href="https://youtube.com">
+            <i class="fab fa-youtube"></i> <span>YouTube</span>
+          </a>
+        </div>
+
+        <div class="footer-qr">
+          <img src="images/frame (1).png" alt="QR Code" />
+          <p>Scan to visit Bihar museum</p>
+        </div>
+        <div class="footer-qr">
+          <img src="images/frame (2).png" alt="QR Code" />
+          <p>Scan to visit Government of Bihar</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

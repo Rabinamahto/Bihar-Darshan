@@ -1,156 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Explore Bihar Navbar</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <nav>
-        <div class="menu-header">
-            <div class="menu-icon" onclick="toggleMenu()">
-                <i class="fas fa-bars"></i>
-            </div>
-            <div class="menu-logo">Bihar Darshan</div>
+      <div class="menu-header">
+        <div class="menu-icon" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="menu-logo">
+          <a href="index.html">
+            <img src="images/images.png" alt="logo" />
+          </a>
+        </div>
+      </div>
+
+      <div class="nav-container" id="navContainer">
+        <div class="navbar-left">
+          <div class="menu-logo">
+            <div class="menu-logo">
+              <a href="index.html">
+                <img src="images/images.png" alt="logo" />
+              </a>
+            </div>          </div>
+          <ul class="navbar-links">
+            <li class="nav-item">
+              <a href="#">Explore Bihar</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Destination</a></li>
+                <li><a href="#">Districts</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#">Art & Culture</a>
+              <ul class="dropdown-menu">
+                <li><a href="art.html">Art & Craft</a></li>
+                <li><a href="festival.html">Festival & Fairs</a></li>
+                <li><a href="food.html">Food & Cuisine</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
 
-        <div class="nav-container" id="navContainer">
-            <div class="navbar-left">
-                <div class="site-logo">Bihar Darshan</div>
-                <ul class="navbar-links">
-                    <li class="nav-item">
-                        <a href="#">Explore Bihar</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Destination</a></li>
-                            <li><a href="#">Districts</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">Art & Culture</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="art.html">Art & Craft</a></li>
-                            <li><a href="festival.html">Festival & Fairs</a></li>
-                            <li><a href="#">Food & Cuisine</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="search-container">
-                <input type="text" placeholder="Search..." />
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+        <div class="search-container">
+          <input type="text" placeholder="Search..." />
+          <i class="fa-solid fa-magnifying-glass"></i>
         </div>
+      </div>
     </nav>
 
+    <div class="carousel">
+      <img id="carouselImage" src="images/Chhath_puja_photo.jpg" alt="Image">
+    </div>
+
     <h1 id="card-heading">Bihar - The Land of Monasteries</h1>
-  <div class="container">
-    <div class="card">
-      <h2>Historical Significance</h2>
-      <p>Bihar is a land rich in history and spiritual heritage. Located in eastern India, it is famously known as the
-        Land of Monasteries due to its association with ancient learning centers like Nalanda and Vikramshila.</p>
+    <div class="container">
+      <div class="card">
+        <h2>Historical Significance</h2>
+        <p>
+          Bihar is a land rich in history and spiritual heritage. Located in
+          eastern India, it is famously known as the Land of Monasteries due to
+          its association with ancient learning centers like Nalanda and
+          Vikramshila.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Spiritual & Cultural Richness</h2>
+        <p>
+          The state is home to several ancient monasteries, temples, and
+          spiritual centers. Places like Bodh Gaya, Rajgir, and Vaishali attract
+          tourists and pilgrims from across the globe.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Non-violence & Freedom</h2>
+        <p>
+          During British rule, Mahatma Gandhi launched the first Satyagraha
+          movement in Champaran, Bihar, against the exploitation of indigo
+          farmers. In the year 2000, the state of Bihar was bifurcated to create
+          the new state of Jharkhand.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Modern Growth</h2>
+        <p>
+          Today, Bihar is one of India’s fastest-growing states, thanks to
+          improvements in governance, infrastructure, healthcare, and education.
+          These changes are attracting both national and global investments.
+        </p>
+      </div>
     </div>
 
-    <div class="card">
-      <h2>Spiritual & Cultural Richness</h2>
-      <p>The state is home to several ancient monasteries, temples, and spiritual centers. Places like Bodh Gaya,
-         Rajgir, and Vaishali attract tourists and pilgrims from across the globe.
+    <section>
+      <h2 class="section-title">History of Bihar</h2>
+      <p>
+        Two of India’s most glorious dynasties, Mauryas (321 - 185 BCE) and
+        Guptas (320 - 550 CE), flourished in ancient Bihar, known then as
+        Magadh. The great King Ashoka, born in 304 BCE, ruled from Pataliputra
+        (present-day Patna) and expanded his empire across South Asia.
       </p>
-    </div>
-
-    <div class="card">
-      <h2>Non-violence & Freedom</h2>
-      <p>During British rule, Mahatma Gandhi launched the first Satyagraha movement in Champaran, Bihar,
-         against the exploitation of indigo farmers. In the year 2000, the state of Bihar was bifurcated to create the new state of Jharkhand.
+      <p>
+        The Gupta period, often called India’s golden age, was also based in
+        Magadh. Bihar was home to the ancient universities Nalanda (5th century)
+        and Vikramshila (8th century), where students from around the world
+        studied. Bihar also hosted the world’s first democracy in Vaishali,
+        governed by the Lichchavis.
       </p>
-    </div>
+    </section>
 
-    <div class="card">
-      <h2>Modern Growth</h2>
-      <p>Today, Bihar is one of India’s fastest-growing states, thanks to improvements in governance,
-         infrastructure, healthcare, and education. These changes are attracting both national and global investments.
+    <section>
+      <h2 class="section-title">Spiritual Greatness</h2>
+      <p>
+        Bihar is spiritually rich. It is where Buddhism originated—Buddha
+        attained enlightenment in Bodh Gaya. Jainism also flourished here, with
+        Mahavira attaining Nirvana at Pawapuri.
       </p>
+      <p>
+        In Hinduism, Gaya is a prominent pilgrimage site for ancestral
+        offerings. Epics like the Ramayana and Mahabharata are deeply linked
+        with Bihar, and the sage Valmiki, who authored Ramayana, belonged to
+        this region.
+      </p>
+      <p>
+        Bihar was a hub of Sufism during the Islamic period, with saints like
+        Imam Taj Faqih, Shihabuddin Pir, and Syed Muhammad of Amjhar Sharif
+        promoting unity.
+      </p>
+      <p>
+        Guru Gobind Singh Ji, the tenth Sikh Guru, was born in Patna in 1660.
+        The Takht Shri Har Mandir Ji Sahib commemorates his birthplace and is
+        one of Sikhism’s five Akal Takhts.
+      </p>
+      <p>
+        Pilgrims can follow different circuits: Buddhist, Jain, Ramayana, Sufi,
+        Hindu, and Sikh—each reflecting Bihar's historical and spiritual
+        richness. In the 12th century CE, Bakhtiar Khilji attacked Bihar and
+        destroyed many historic sites. Later, Sher Shah Suri built the Grand
+        Trunk Road during his rule.
+      </p>
+    </section>
+
+    <div class="comment-box">
+      <h2>Comment</h2>
+
+      <div id="commentsContainer"></div>
+
+      <textarea
+        id="commentInput"
+        placeholder="Write your comment..."
+      ></textarea>
+      <button onclick="addComment()">Post Comment</button>
     </div>
-  </div>
 
+    <footer class="footer-left">
+      <div class="footer-row">
+        <div class="footer-left-column">
+          <div class="footer-explore">Explore Bihar</div>
+          <ul class="footer-links">
+            <li><a href="#">Art & Culture</a></li>
+            <li><a href="#">Food</a></li>
+            <li><a href="#">Festival</a></li>
+            <li><a href="#">Map</a></li>
+          </ul>
+        </div>
 
-  <section>
-    <h2 class="section-title">History of Bihar</h2>
-    <p>
-      Two of India’s most glorious dynasties, Mauryas (321 - 185 BCE) and Guptas (320 - 550 CE), flourished in ancient Bihar, known then as Magadh. The great King Ashoka, born in 304 BCE, ruled from Pataliputra (present-day Patna) and expanded his empire across South Asia.
-    </p>
-    <p>
-      The Gupta period, often called India’s golden age, was also based in Magadh. Bihar was home to the ancient universities Nalanda (5th century) and Vikramshila (8th century), where students from around the world studied. Bihar also hosted the world’s first democracy in Vaishali, governed by the Lichchavis.
-    </p>
-  </section>
+        <div class="footer-social">
+          <a href="https://facebook.com">
+            <i class="fab fa-facebook-f"></i> <span>Facebook</span>
+          </a>
+          <a href="https://instagram.com">
+            <i class="fab fa-instagram"></i> <span>Instagram</span>
+          </a>
+          <a href="https://youtube.com">
+            <i class="fab fa-youtube"></i> <span>YouTube</span>
+          </a>
+        </div>
 
-  <section>
-    <h2 class="section-title">Spiritual Greatness</h2>
-    <p>
-      Bihar is spiritually rich. It is where Buddhism originated—Buddha attained enlightenment in Bodh Gaya. Jainism also flourished here, with Mahavira attaining Nirvana at Pawapuri.
-    </p>
-    <p>
-      In Hinduism, Gaya is a prominent pilgrimage site for ancestral offerings. Epics like the Ramayana and Mahabharata are deeply linked with Bihar, and the sage Valmiki, who authored Ramayana, belonged to this region.
-    </p>
-    <p>
-      Bihar was a hub of Sufism during the Islamic period, with saints like Imam Taj Faqih, Shihabuddin Pir, and Syed Muhammad of Amjhar Sharif promoting unity.
-    </p>
-    <p>
-      Guru Gobind Singh Ji, the tenth Sikh Guru, was born in Patna in 1660. The Takht Shri Har Mandir Ji Sahib commemorates his birthplace and is one of Sikhism’s five Akal Takhts.
-    </p>
-    <p>
-      Pilgrims can follow different circuits: Buddhist, Jain, Ramayana, Sufi, Hindu, and Sikh—each reflecting Bihar's historical and spiritual richness. In the 12th century CE, Bakhtiar Khilji attacked Bihar and destroyed many historic sites. Later, Sher Shah Suri built the Grand Trunk Road during his rule.
-    </p>
-  </section>
-
-  <div class="comment-box">
-    <h2>Comment</h2>
-    
-    <div id="commentsContainer"></div>
-
-    <textarea id="commentInput" placeholder="Write your comment..."></textarea>
-    <button onclick="addComment()">Post Comment</button>
-  </div>
-    
-  <footer class="footer-left">
-    <div class="footer-row">
-      <div class="footer-left-column">
-        <div class="footer-explore">Explore Bihar</div>
-        <ul class="footer-links">
-          <li><a href="#">Art & Culture</a></li>
-          <li><a href="#">Food</a></li>
-          <li><a href="#">Festival</a></li>
-          <li><a href="#">Map</a></li>
-        </ul>
+        <div class="footer-qr">
+          <img src="images/frame (1).png" alt="QR Code" />
+          <p>Scan to visit Bihar museum</p>
+        </div>
+        <div class="footer-qr">
+          <img src="images/frame (2).png" alt="QR Code" />
+          <p>Scan to visit Government of Bihar</p>
+        </div>
       </div>
-
-      <div class="footer-social">
-        <a href="https://facebook.com">
-          <i class="fab fa-facebook-f"></i> <span>Facebook</span>
-        </a>
-        <a href="https://instagram.com">
-          <i class="fab fa-instagram"></i> <span>Instagram</span>
-        </a>
-        <a href="https://youtube.com">
-          <i class="fab fa-youtube"></i> <span>YouTube</span>
-        </a>
-      </div>
-
-      <div class="footer-qr">
-        <img src="images/frame (1).png" alt="QR Code" />
-        <p>Scan to visit Bihar museum</p>
-      </div>
-      <div class="footer-qr">
-        <img src="images/frame (2).png" alt="QR Code" />
-        <p>Scan to visit Government of Bihar</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>

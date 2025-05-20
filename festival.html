@@ -5,11 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
 </head>
 <body>
+
+    <nav>
+        <div class="menu-header">
+          <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="menu-logo">
+            <div class="menu-logo">
+                <a href="index.html">
+                  <img src="images/images.png" alt="logo" />
+                </a>
+              </div>          </div>
+        </div>
+  
+        <div class="nav-container" id="navContainer">
+          <div class="navbar-left">
+            <div class="menu-logo">
+                <div class="menu-logo">
+                    <a href="index.html">
+                      <img src="images/images.png" alt="logo" />
+                    </a>
+                  </div>            </div>         
+             <ul class="navbar-links">
+              <li class="nav-item">
+                <a href="#">Explore Bihar</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Destination</a></li>
+                  <li><a href="#">Districts</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#">Art & Culture</a>
+                <ul class="dropdown-menu">
+                  <li><a href="art.html">Art & Craft</a></li>
+                  <li><a href="festival.html">Festival & Fairs</a></li>
+                  <li><a href="food.html">Food & Cuisine</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="search-container">
+            <input type="text" placeholder="Search..." />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </nav>
        <header>
         <h1>Festivals of Bihar</h1>
-        <p>Explore the vibrant and spiritual festivals of Bihar.</p>
     </header>
 
     <main class="festival-container">
@@ -135,5 +183,40 @@
                 </div>
             </div>
         </section>
+
+        <footer class="footer-left">
+            <div class="footer-row">
+              <div class="footer-left-column">
+                <div class="footer-explore">Explore Bihar</div>
+                <ul class="footer-links">
+                  <li><a href="#">Art & Culture</a></li>
+                  <li><a href="#">Food</a></li>
+                  <li><a href="#">Festival</a></li>
+                  <li><a href="#">Map</a></li>
+                </ul>
+              </div>
+        
+              <div class="footer-social">
+                <a href="https://facebook.com">
+                  <i class="fab fa-facebook-f"></i> <span>Facebook</span>
+                </a>
+                <a href="https://instagram.com">
+                  <i class="fab fa-instagram"></i> <span>Instagram</span>
+                </a>
+                <a href="https://youtube.com">
+                  <i class="fab fa-youtube"></i> <span>YouTube</span>
+                </a>
+              </div>
+        
+              <div class="footer-qr">
+                <img src="images/frame (1).png" alt="QR Code" />
+                <p>Scan to visit Bihar museum</p>
+              </div>
+              <div class="footer-qr">
+                <img src="images/frame (2).png" alt="QR Code" />
+                <p>Scan to visit Government of Bihar</p>
+              </div>
+            </div>
+          </footer>
 </body>
 </html>
